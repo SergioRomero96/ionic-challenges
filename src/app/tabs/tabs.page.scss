@@ -1,1 +1,41 @@
+@import "_variables";
 
+::ng-deep {
+  ion-title {
+    color: white;
+    font-size: 28px;
+  }
+}
+
+ion-tab-bar {
+  --border: none;
+  height: 64px;
+  //margin: 16px 20px;
+  border-radius: 32px 32px 0px 0px;
+  //box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04), 0px 1px 3px 0px rgba(0,0,0, 0.02);
+}
+
+ion-tab-button {
+  --ripple-color: none;
+
+  ion-label {
+    display: none;
+  }
+}
+
+.tab-selected {
+  color: #fff;
+  ion-label {
+    display: block;
+  }
+}
+
+ion-fab {
+  position: absolute;
+  bottom: 12px;
+  color: white;
+  text-align: center;
+  ion-fab-button {
+    margin-bottom: 8px;
+  }
+}

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,52 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-app {
+  background: #15141a;
+}
+
+ion-header {
+  ion-toolbar {
+    --background: transparent;
+  }
+}
+
+ion-content {
+  --background: #15141a;
+  --color: white;
+}
+
+.text-gray {
+  color: gray; // 9A999F
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.circle {
+  border-radius: 100%;
+  background: #25d9c0;
+  height: 30px;
+  width: 30px;
+  margin-right: 16px;
+}
+
+* {
+  outline: none;
+  //margin: 0;
+}

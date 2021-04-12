@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
   styleUrls: ['tabs.page.scss']
 })
-export class TabsPage {
+export class TabsPage implements OnInit{
 
-  constructor() {}
+  constructor(
+    private router:Router,
+    private activeRouter:ActivatedRoute
+  ) {}
 
+  ngOnInit(): void {
+    
+  }
+
+  newTransaction(){
+    this.router.navigateByUrl("categories/new")
+  }
 }

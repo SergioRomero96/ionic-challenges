@@ -1,0 +1,118 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title>Balance</ion-title>
+      <ion-label>Mayo, 25</ion-label>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="6">
+          <div class="mb-3">
+            <h1 class="balance-title">$626.00</h1>
+            <p class="text-gray">restante</p>
+          </div>
+          <div class="mb-3">
+            <h2 class="movement-title">$524.00</h2>
+            <p class="text-gray">Ingresos</p>
+          </div>
+          <div class="mb-3">
+            <h2 class="movement-title">$320.00</h2>
+            <p class="text-gray">Gastos</p>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div>
+            <h1 class="text-right">
+              <ion-icon name="help-circle-outline" color="light"></ion-icon>
+            </h1>
+            <div style="position: absolute; right: 0;">
+              <ion-badge class="badge-balance">20.5%</ion-badge>
+              <div class="text-center">
+                <circle-progress [percent]="20.5" [radius]="50" [outerStrokeWidth]="10" [innerStrokeWidth]="10"
+                  [outerStrokeColor]="'#FF5B8E'" [innerStrokeColor]="'#313036'" [animation]="true"
+                  [animationDuration]="300" [responsive]="false" [space]="-10" [showTitle]="false"
+                  [showSubtitle]="false" [showUnits]="false"></circle-progress>
+                <div>
+                  <ion-badge class="badge-total">79.5%</ion-badge>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-list-header>
+      Movimientos recientes
+    </ion-list-header>
+
+    <ion-item class="ion-no-border">
+      <ion-avatar slot="start">
+        <div class="avatar-color">
+          01
+        </div>
+      </ion-avatar>
+      <ion-label>
+        <h2>Gastos pasajes</h2>
+        <p>Hace 1 min</p>
+      </ion-label>
+      <ion-text>
+        -$66.00
+      </ion-text>
+      <ion-icon name="arrow-down" slot="end" color="app-primary"></ion-icon>
+    </ion-item>
+
+    <ion-item class="ion-no-border">
+      <ion-avatar slot="start">
+        <div class="avatar-color">
+          01
+        </div>
+      </ion-avatar>
+      <ion-label>
+        <h2>Gastos comida</h2>
+        <p>Hace 2 min</p>
+      </ion-label>
+      <ion-text>
+        -$66.00
+      </ion-text>
+      <ion-icon name="arrow-down" slot="end" color="app-primary"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <div class="avatar-color">
+          01
+        </div>
+      </ion-avatar>
+      <ion-label>
+        <h2>Pagos de trabajo</h2>
+        <p>Hace 3 días</p>
+      </ion-label>
+      <ion-text>
+        $266.00
+      </ion-text>
+      <ion-icon name="arrow-up" slot="end" color="app-secondary"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <div class="avatar-color">
+          01
+        </div>
+      </ion-avatar>
+      <ion-label>
+        <h2>Pagos Web</h2>
+        <p>hace 10 días</p>
+      </ion-label>
+      <ion-text>
+        $66.00
+      </ion-text>
+      <ion-icon name="arrow-up" slot="end" color="app-secondary"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

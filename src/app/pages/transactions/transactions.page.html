@@ -1,0 +1,124 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nueva transacción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <form class="ion-padding">
+    <div class="form-group">
+      <ion-label>Detalle</ion-label>
+      <ion-input placeholder="Compra de un paquete de pan"></ion-input>
+    </div>
+    <div class="form-group" style="margin-top: 24px; margin-bottom: 0px;">
+      <ion-label>Monto</ion-label>
+      <p class="text-amount">$25.00</p>
+    </div>
+  </form>
+  <!-- Label only -->
+  <ion-segment value="call" style="width: 50%;">
+    <ion-segment-button value="call" >
+      <ion-label >Gastos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favorite">
+      <ion-label>Ingresos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-item>
+        <div class="circle"></div>
+      <ion-label>
+        <h2>Gastos pasajes</h2>
+        <p>Incluye solo pasajes urbanos y taxis</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="circle">
+
+      </div>
+    <ion-label>
+      <h2>Gastos pasajes</h2>
+      <p>Incluye solo pasajes urbanos y taxis</p>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <div class="circle">
+
+    </div>
+  <ion-label>
+    <h2>Gastos pasajes</h2>
+    <p>Incluye solo pasajes urbanos y taxis</p>
+  </ion-label>
+</ion-item>
+  </ion-list>
+
+  <ion-grid style="margin-top: 40px;">
+    <ion-row>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">7</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">8</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">9</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="app-default" expand="block" (click)="showDatePicker()">
+          <ion-text>
+            <p class="text-gray" style="font-size: 13px;">Fecha</p>
+            <p>12/12/2020</p>
+          </ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">4</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">5</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">6</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="app-default" expand="block">+</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">1</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">2</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">3</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="app-default" expand="block">-</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">.</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">0</ion-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-button color="app-default" expand="block">
+          <ion-icon name="backspace-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="app-primary">Listo</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

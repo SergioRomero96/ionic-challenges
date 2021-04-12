@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nueva categoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-group">
+    <ion-label>Selecciona un color</ion-label>
+    <div style="overflow-x: auto;
+  white-space: nowrap;">
+      <ion-checkbox [style]="{'--background':'var(--ion-color-'+color+')'}" *ngFor="let color of colors"
+        [color]="color"></ion-checkbox>
+    </div>
+  </div>
+  <div class="form-group">
+    <ion-label>Tipo de transacción</ion-label>
+
+    <!-- Label only -->
+    <ion-segment value="call" style="width: 50%;">
+      <ion-segment-button value="call">
+        <ion-label>Gastos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorite">
+        <ion-label>Ingresos</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div class="form-group">
+    <ion-label>Nombre de la categoria</ion-label>
+    <ion-input placeholder="Transporte por ejemplo"></ion-input>
+  </div>
+  <div class="form-group">
+    <ion-label>Descripción</ion-label>
+    <ion-textarea rows="5" placeholder="(Opcional) taxis, Uber, etc"></ion-textarea>
+  </div>
+
+  <ion-button expand="block" color="app-primary">Guardar categoria</ion-button>
+
+</ion-content>

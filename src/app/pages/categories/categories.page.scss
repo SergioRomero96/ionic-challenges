@@ -1,0 +1,54 @@
+ion-header {
+  ion-toolbar {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 12px;
+
+    ion-label {
+      color: #9a999f;
+    }
+  }
+}
+
+.scroll-horizontal {
+  padding-left: 12px;
+}
+
+
+ion-segment {
+  ion-segment-button {
+    --color: gray;
+    --indicator-height: 4px;
+    --indicator-color: white;
+    --color-checked: white;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+}
+
+ion-segment-button::part(indicator) {
+  width: 24px;
+  margin: auto;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-item {
+  --background: transparent;
+  --border-color: transparent;
+  h2,
+  ion-text {
+    color: white;
+    font-size: 18px;
+  }
+
+  ion-text {
+    font-weight: bold;
+  }
+
+  p {
+    color: #9a999f;
+  }
+}
