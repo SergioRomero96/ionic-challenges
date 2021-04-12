@@ -2,7 +2,7 @@
 
 ## APPS
 ## 01 - CHALLENGE
-<img src="./screenshot/challenge1.jpg" alt="challenge1" width="400"/>
+<img src="./screenshot/challenge1.jpg" alt="challenge1" width="600"/>
 
 ## PREVIEW
 <TABLE BORDER>
