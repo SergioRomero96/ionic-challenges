@@ -4,7 +4,7 @@
 ## 01 - CHALLENGE
 <img src="./screenshot/challenge1.jpg" alt="challenge1" width="600"/>
 
-## PREVIEW
+## PREVIEW MADE WITH IONIC 
 <TABLE BORDER>
     <TR>
         <TH style="text-align:center">HOME</TH>
